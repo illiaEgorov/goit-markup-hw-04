@@ -69,6 +69,44 @@ body {
 }
 
 /* menu*/
+.is-active {
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+}
+.menu-item-link {
+  position: relative;
+  padding: 24px 0;
+  display: block;
+  color: #2e2f42;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.menu-item-link:hover,
+.menu-item-link:focus-visible,
+.menu-item-link.is-active {
+  color: #404bbf;
+}
+.menu-item-link:hover::after,
+.menu-item-link:focus-visible::after,
+.menu-item-link.is-active::after {
+  transform: scaleX(1);
+}
+.menu-item-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #404bbf;
+
+  transform: scaleX(0);
+  transition: transform 200ms ease;
+}
 .logo {
   font-weight: 700;
   font-size: 18px;
@@ -90,23 +128,7 @@ body {
 .menu {
   gap: 40px;
 }
-.menu-item-link {
-  padding: 24px 0;
-  display: block;
-  color: #2e2f42;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
-.menu-item-link:hover {
-  color: #404bbf;
-  text-decoration: underline;
-}
-.menu-item-link:focus {
-  color: #404bbf;
-  text-decoration: underline;
-}
+
 /* section address */
 .contacts-link {
   color: #434455;
@@ -252,6 +274,10 @@ body {
   background-color: #ffffff;
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow:
+    0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .text-item {
   padding: 32px 0;
@@ -278,8 +304,13 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  color: #fff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.social-link:hover,
+.social-link:focus-visible {
+  background-color: #404bbf;
+}
 .social-menu svg {
   color: #fff;
 }
@@ -316,6 +347,17 @@ body {
 }
 
 /* #region footer */
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.footer-info {
+  margin-right: 120px;
+}
+.footer-social .social-menu {
+  margin-top: 16px;
+  margin-bottom: 0;
+}
 .footer {
   background-color: #2e2f42;
   padding: 100px 0;
@@ -325,6 +367,7 @@ body {
   display: inline-block;
   margin-bottom: 16px;
 }
+
 .footer-text {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
