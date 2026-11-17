@@ -1,7 +1,20 @@
 /* #region footer */
 .footer-container {
   display: flex;
-  align-items: baseline;
+  align-items: flex-start;
+}
+.footer .social-menu {
+  gap: 16px;
+}
+.footer .social-link:hover,
+.footer .social-link:focus-visible {
+  background-color: #31d0aa;
+}
+.social-link {
+  color: #f4f4fd;
+}
+.social-menu svg {
+  fill: currentColor;
 }
 .footer-info {
   margin-right: 120px;

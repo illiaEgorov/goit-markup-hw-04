@@ -21,10 +21,11 @@
   <body>
     <header id="header" class="header-box">
       <div class="container header-container">
+        <a class="logo header-logo" href="./index.html">
+          Web<span class="logo-studio-header">Studio</span>
+        </a>
+
         <nav class="header-nav">
-          <a class="logo header-logo" href="./index.html"
-            >Web<span class="logo-studio-header">Studio</span></a
-          >
           <ul class="menu">
             <li class="menu-item">
               <a class="menu-item-link" href="./index.html">Studio</a>
@@ -37,6 +38,7 @@
             </li>
           </ul>
         </nav>
+
         <address class="contacts">
           <ul class="contacts-list">
             <li>
@@ -55,7 +57,7 @@
     </header>
     <main>
       <!--first section-->
-      <section class="first-section" id="hero">
+      <section id="hero" class="first-section">
         <div class="container">
           <h1 class="first-section-title">
             Effective Solutions for Your Business
@@ -65,63 +67,57 @@
       </section>
 
       <!--Our Features -->
-      <section class="section-strategy" id="features">
+
+      <section id="features" class="section-strategy">
         <div class="container">
-          <h2 class="sr-only">не може бути пустим</h2>
-          <!-- заменил клас visually-hidden на  sr-only -->
-          <ul class="icon-menu">
-            <li class="icon-item">
-              <a href="#"
-                ><svg class="icon-svg" width="64" height="64">
-                  <use href="./images/icons.svg#satelite"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="icon-item">
-              <a href="#"
-                ><svg class="icon-svg" width="64" height="64">
-                  <use href="./images/icons.svg#clock"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="icon-item">
-              <a href="#">
-                <svg class="icon-svg" width="64" height="64">
-                  <use href="./images/icons.svg#pc"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="icon-item">
-              <a href="#"
-                ><svg class="icon-svg" width="64" height="64">
-                  <use href="./images/icons.svg#cosmo"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          <h2 class="sr-only">Our Features</h2>
+
           <ul class="strategy">
             <li class="strategy-item">
+              <div class="icon-item">
+                <svg class="icon-svg" width="64" height="64" aria-hidden="true">
+                  <use href="./images/icons.svg#satelite"></use>
+                </svg>
+              </div>
               <h3 class="h-style">Strategy</h3>
               <p class="text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
+
             <li class="strategy-item">
+              <div class="icon-item">
+                <svg class="icon-svg" width="64" height="64" aria-hidden="true">
+                  <use href="./images/icons.svg#clock"></use>
+                </svg>
+              </div>
               <h3 class="h-style">Punctuality</h3>
               <p class="text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
+
             <li class="strategy-item">
+              <div class="icon-item">
+                <svg class="icon-svg" width="64" height="64" aria-hidden="true">
+                  <use href="./images/icons.svg#pc"></use>
+                </svg>
+              </div>
               <h3 class="h-style">Diligence</h3>
               <p class="text">
                 Research and confirm brands with the strongest digital growth
                 opportunities and minimize risk.
               </p>
             </li>
+
             <li class="strategy-item">
+              <div class="icon-item">
+                <svg class="icon-svg" width="64" height="64" aria-hidden="true">
+                  <use href="./images/icons.svg#cosmo"></use>
+                </svg>
+              </div>
               <h3 class="h-style">Technologies</h3>
               <p class="text">
                 Design practice focused on digital experiences. We bring forth a
@@ -131,8 +127,9 @@
           </ul>
         </div>
       </section>
+
       <!--Our Team / section 3 -->
-      <section class="section_our_team" id="team">
+      <section id="team" class="section_our_team">
         <div class="container">
           <h2 class="title-h2">Our Team</h2>
           <ul class="team-list">
@@ -144,37 +141,36 @@
                 width="264"
                 height="260"
               />
+
               <div class="text-item">
                 <h3 class="h-style h-style-team">Mark Guerrero</h3>
                 <p class="text text-style-team">Product Designer</p>
-              </div>
-              <!-- social icons -->
-              <div>
+
                 <ul class="social-menu">
                   <li class="social-item">
-                    <a href="#" class="social-link" aria-label="instagram">
-                      <svg width="16" height="16">
+                    <a href="#" class="social-link" aria-label="Instagram">
+                      <svg width="16" height="16" aria-hidden="true">
                         <use href="./images/icons.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-item">
-                    <a href="#" class="social-link" aria-label="twitter"
-                      ><svg width="16" height="16">
+                    <a href="#" class="social-link" aria-label="Twitter">
+                      <svg width="16" height="16" aria-hidden="true">
                         <use href="./images/icons.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-item">
-                    <a href="#" class="social-link" aria-label="facebook"
-                      ><svg width="16" height="16">
+                    <a href="#" class="social-link" aria-label="Facebook">
+                      <svg width="16" height="16" aria-hidden="true">
                         <use href="./images/icons.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-icon">
-                    <a href="#" class="social-link" aria-label="linkdn"
-                      ><svg width="16" height="16">
+                  <li class="social-item">
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                      <svg width="16" height="16" aria-hidden="true">
                         <use href="./images/icons.svg#linkdn"></use>
                       </svg>
                     </a>
@@ -182,6 +178,7 @@
                 </ul>
               </div>
             </li>
+
             <li class="team-item">
               <img
                 class="team-item-img"
@@ -190,36 +187,36 @@
                 width="264"
                 height="260"
               />
+
               <div class="text-item">
                 <h3 class="h-style h-style-team">Tom Ford</h3>
                 <p class="text text-style-team">Frontend Developer</p>
-              </div>
-              <div>
+
                 <ul class="social-menu">
                   <li class="social-item">
-                    <a href="#" class="social-link" aria-label="instagram">
-                      <svg width="16" height="16">
+                    <a href="#" class="social-link" aria-label="Instagram">
+                      <svg width="16" height="16" aria-hidden="true">
                         <use href="./images/icons.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="social-item">
-                    <a href="#" class="social-link" aria-label="twitter"
-                      ><svg width="16" height="16">
+                    <a href="#" class="social-link" aria-label="Twitter">
+                      <svg width="16" height="16" aria-hidden="true">
                         <use href="./images/icons.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
-                    <a href="#" class="social-link" aria-label="facebook"
-                      ><svg width="16" height="16">
+                  <li class="social-item">
+                    <a href="#" class="social-link" aria-label="Facebook">
+                      <svg width="16" height="16" aria-hidden="true">
                         <use href="./images/icons.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
-                    <a href="#" class="social-link" aria-label="linkdn"
-                      ><svg width="16" height="16">
+                  <li class="social-item">
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                      <svg width="16" height="16" aria-hidden="true">
                         <use href="./images/icons.svg#linkdn"></use>
                       </svg>
                     </a>
@@ -232,40 +229,40 @@
               <img
                 class="team-item-img"
                 src="./images/camila_garcia.jpg"
-                alt="foto_camila_garcia"
+                alt="Camila Garcia"
                 width="264"
                 height="260"
               />
+
               <div class="text-item">
                 <h3 class="h-style h-style-team">Camila Garcia</h3>
                 <p class="text text-style-team">Marketing</p>
-              </div>
-              <div>
+
                 <ul class="social-menu">
-                  <li>
-                    <a href="#" class="social-link" aria-label="instagram">
-                      <svg width="16" height="16">
+                  <li class="social-item">
+                    <a href="#" class="social-link" aria-label="Instagram">
+                      <svg width="16" height="16" aria-hidden="true">
                         <use href="./images/icons.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
-                    <a href="#" class="social-link" aria-label="twitter"
-                      ><svg width="16" height="16">
+                  <li class="social-item">
+                    <a href="#" class="social-link" aria-label="Twitter">
+                      <svg width="16" height="16" aria-hidden="true">
                         <use href="./images/icons.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
-                    <a href="#" class="social-link" aria-label="facebook"
-                      ><svg class="social-icon" width="16" height="16">
+                  <li class="social-item">
+                    <a href="#" class="social-link" aria-label="Facebook">
+                      <svg width="16" height="16" aria-hidden="true">
                         <use href="./images/icons.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
-                    <a href="#" class="social-link" aria-label="linkdn"
-                      ><svg width="16" height="16">
+                  <li class="social-item">
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                      <svg width="16" height="16" aria-hidden="true">
                         <use href="./images/icons.svg#linkdn"></use>
                       </svg>
                     </a>
@@ -273,44 +270,45 @@
                 </ul>
               </div>
             </li>
+
             <li class="team-item">
               <img
                 class="team-item-img"
                 src="./images/daniel_wilson.jpg"
-                alt="Daniel  Wilson"
+                alt="Daniel Wilson"
                 width="264"
                 height="260"
               />
+
               <div class="text-item">
                 <h3 class="h-style h-style-team">Daniel Wilson</h3>
                 <p class="text text-style-team">UI Designer</p>
-              </div>
-              <div>
+
                 <ul class="social-menu">
-                  <li>
-                    <a href="#" class="social-link" aria-label="instagram">
-                      <svg width="16" height="16">
+                  <li class="social-item">
+                    <a href="#" class="social-link" aria-label="Instagram">
+                      <svg width="16" height="16" aria-hidden="true">
                         <use href="./images/icons.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
-                    <a href="#" class="social-link" aria-label="twitter"
-                      ><svg width="16" height="16">
+                  <li class="social-item">
+                    <a href="#" class="social-link" aria-label="Twitter">
+                      <svg width="16" height="16" aria-hidden="true">
                         <use href="./images/icons.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
-                    <a href="#" class="social-link" aria-label="facebook"
-                      ><svg width="16" height="16">
+                  <li class="social-item">
+                    <a href="#" class="social-link" aria-label="Facebook">
+                      <svg width="16" height="16" aria-hidden="true">
                         <use href="./images/icons.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
-                    <a href="#" class="social-link" aria-label="linkdn"
-                      ><svg width="16" height="16">
+                  <li class="social-item">
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                      <svg width="16" height="16" aria-hidden="true">
                         <use href="./images/icons.svg#linkdn"></use>
                       </svg>
                     </a>
@@ -453,6 +451,8 @@
         </div>
       </section>
     </main>
+
+    <!-- footer -->
     <footer id="footer" class="footer">
       <div class="container footer-container">
         <div class="footer-info">
@@ -469,29 +469,29 @@
           <p class="footer-social-text">Social media</p>
           <ul class="social-menu">
             <li class="social-item">
-              <a href="#" class="social-link" aria-label="instagram">
-                <svg class="social-icon" width="16" height="16">
+              <a href="./images/" class="social-link" aria-label="instagram">
+                <svg class="social-icon" width="24" height="24">
                   <use href="./images/icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social-item">
-              <a href="#" class="social-link" aria-label="twitter"
-                ><svg class="social-icon" width="16" height="16">
+              <a href="./images/" class="social-link" aria-label="twitter"
+                ><svg class="social-icon" width="24" height="24">
                   <use href="./images/icons.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social-item">
-              <a href="#" class="social-link" aria-label="facebook"
-                ><svg class="social-icon" width="16" height="16">
+              <a href="./images/" class="social-link" aria-label="facebook"
+                ><svg class="social-icon" width="24" height="24">
                   <use href="./images/icons.svg#facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-icon">
-              <a href="#" class="social-link" aria-label="linkdn"
-                ><svg class="social-icon" width="16" height="16">
+            <li class="social-item">
+              <a href="./images/" class="social-link" aria-label="linkdn"
+                ><svg class="social-icon" width="24" height="24">
                   <use href="./images/icons.svg#linkdn"></use>
                 </svg>
               </a>
