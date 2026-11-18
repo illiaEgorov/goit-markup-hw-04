@@ -7,7 +7,7 @@
   gap: 16px;
 }
 .footer .social-link:hover,
-.footer .social-link:focus-visible {
+.footer .social-link:focus {
   background-color: #31d0aa;
 }
 .social-link {

@@ -71,7 +71,8 @@
 }
 
 .menu-item-link:hover::after,
-.menu-item-link:focus-visible::after {
+.menu-item-link:focus-visible::after,
+.menu-item-link.is-active::after {
   transform: scaleX(1);
 }
 
